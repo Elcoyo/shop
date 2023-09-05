@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}membre{% endblock %}
+
+{% block body %}
+<div>
+
+    <h1 class="text-center mt-4">GESTION DES MEMBRES</h1>
+
+    <div class="container">
+    {{form_start(formmembre)}}
+    {{form_row(formmembre.pseudo)}}
+    {{form_row(formmembre.motDePasse)}}
+    {{form_row(formmembre.nom)}}
+    {{form_row(formmembre.prenom)}}
+    {{form_row(formmembre.email)}}
+    {{form_row(formmembre.civilité)}}
+    {{form_row(formmembre.statut)}}
+    {{form_end(formmembre)}}
+    </div>
+
+</div>
+{% endblock %}

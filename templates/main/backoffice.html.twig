@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div class="container text-center mt-6">GESTION MEMBRES/ARTICLES</div>
+
+<div class="container text-center " >
+    <button ><a href="{{path('app_membres')}}">GESTION MEMBRE</a></button>
+    <button><a href="{{path('tableau_produit')}}">GESTION ARTICLE</a></button>
+</div>
+
+{% endblock %}
